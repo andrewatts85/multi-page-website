@@ -1,0 +1,114 @@
+/* grid */
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+[class*="col-"] {
+  float: left;
+  border: .063em solid #4E5340;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* body */
+body {
+  font-family: sans-serif;  
+  background-color: lightgray;
+}
+
+/* jumbotron */
+.jumbotron {
+  displa: none;
+  position: relative;
+  z-index: 0;
+}
+.jumbotron img {
+  width: 100%;
+  heigh: 38.7em;
+  height: 49em;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: .063em solid #4E5340;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  color: white;
+  padding: 1em 2em 1em 2em;
+  margin-top: 10em;
+  background-color: rgba(78, 84, 64, 0.15);
+  text-align: center;
+}
+.header h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+.header h2, .header h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 100;
+}
+.header h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* nav */
+.nav {
+  z-index: 1;
+  
+}
+.nav a {
+    text-decoration: none;
+    colo: #FF4A1C;
+    colo: white;
+    color: darkgreen;
+    padding: .8em;
+    display:inline-block;
+}
+.nav ul li ul li a {
+  color: white;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover, .nav a:hover {
+  background: rgba(128,128,128,.1);
+  color: darkgreen;
+  z-index: 1;
+}
+.nav a:hover {
+  background: #BEBEBE;
+}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li:hover ul {display: block; z-index: 1;}
+ul li ul li {
+  background: #4E5340;
+  display: block;
+}
+ul li ul li a {display:block !important;}
+/*ul li ul li:hover {backgroun: #666; z-index: 1;}*/
