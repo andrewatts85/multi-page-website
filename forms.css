@@ -1,0 +1,124 @@
+/* grid */
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+[class*="col-"] {
+  float: left;
+  padding: .8em;
+  border: .063em solid lightgray;
+  border-radius: .063em;
+  margin-top: 1.5em;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* nav */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  
+}
+.nav a {
+    text-decoration: none;
+    colo: #FF4A1C;
+    colo: white;
+    color: darkgreen;
+    padding: .8em;
+    display: inline-block;
+}
+.nav ul li ul li a {
+  color: white;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover, .nav a:hover {
+  background: rgba(128,128,128,.1);
+  color: darkgreen;
+  z-index: 1;
+}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li:hover ul {display: block; z-index: 1;}
+ul li ul li {
+  background: #4E5340;
+  display: block;
+}
+ul li ul li a {display:block !important;}
+/*ul li ul li:hover {backgroun: #666; z-index: 1;}*/
+
+/* body */
+body {
+  font-family: sans-serif;
+  background-colo: #EDF5F0;
+}
+.container {
+  width: 60%;
+  margin: 6% auto;
+}
+.header {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: darkgreen;
+}
+.description a {
+  text-decoration: none;
+}
+.description {
+  padding: 0;
+  border: none;
+}
+img {
+  width: 100%;
+}
+.mid {
+  border-left: none;
+  border-right: none;
+}
+.last {
+  border-right: .063em solid lightgray;
+}
+.demo-btn {
+  border: .063em solid red;
+  color: red;
+  text-decoration: none;
+  padding: .6em;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-radius: .3em;
+  font-weight: bold;
+  opacity: .8;
+}
+.demo-btn:hover {
+  background-color: #FF6060;
+  color: white;
+  border-color: #FF6060;
+}
